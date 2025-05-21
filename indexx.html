@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Millionaire Money Course</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      background: linear-gradient(to right, #0a0f2c, #1b2a49);
+      color: #f1f1f1;
+    }
+    .navbar {
+      display: flex;
+      justify-content: center;
+      background-color: #121a3c;
+      padding: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    }
+    .navbar button {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      border: none;
+      padding: 12px 25px;
+      margin: 0 10px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 12px;
+      transition: background 0.3s ease;
+    }
+    .navbar button:hover {
+      background-color: #3b82f6;
+    }
+    .content {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 25px;
+      background: #ffffff;
+      color: #222;
+      border-radius: 18px;
+      box-shadow: 0 0 25px rgba(0,0,0,0.3);
+    }
+    .hidden {
+      display: none;
+    }
+    h1 {
+      color: #1e3a8a;
+    }
+    p, li {
+      font-size: 18px;
+      line-height: 1.8;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <button onclick="showPart(1)">Part 1</button>
+    <button onclick="showPart(2)">Part 2</button>
+  </div>
+
+  <div class="content" id="part1">
+    <h1>Part 1: Easy Steps to Make Money</h1>
+    <p>Welcome! This guide will show you easy ways to start making money. Anyone can do it — even if you’re young or don’t have much experience. Let’s go step by step.</p>
+
+    <h2>Step 1: Pick One Way to Make Money</h2>
+    <ul>
+      <li><strong>Sell your stuff:</strong> Find things at home you don’t use like toys, clothes, or games. Clean them, take pictures, and sell them with help from an adult.</li>
+      <li><strong>Do small jobs:</strong> Help someone carry groceries, clean their yard, or walk a dog. Ask neighbors or family first.</li>
+      <li><strong>Help online:</strong> Some websites let you do small jobs like drawing, writing stories, or making designs (ask a parent for help).</li>
+      <li><strong>Learn coding:</strong> You can learn to build websites and games. Then people can pay you to make sites for them!</li>
+    </ul>
+
+    <h2>Step 2: Set a Goal</h2>
+    <p>Ask yourself: how much money do I want to make this week? A good goal is $10 to $50 at the start. Write it down so you remember.</p>
+
+    <h2>Step 3: Do Something Today</h2>
+    <p>Start small! If you’re selling something, take the pictures today. If you want to learn coding, look up a video or lesson. Action is what makes money happen.</p>
+
+    <h2>Step 4: Use Free Tools</h2>
+    <p>Use tools that are totally free to help you:</p>
+    <ul>
+      <li><strong>Canva:</strong> Design logos, posters, or ads easily.</li>
+      <li><strong>ChatGPT:</strong> Get help writing or thinking of ideas.</li>
+      <li><strong>W3Schools:</strong> Learn coding step-by-step for free.</li>
+      <li><strong>Replit:</strong> Make websites without needing to download anything.</li>
+    </ul>
+
+    <h2>Step 5: Keep Going Every Day</h2>
+    <p>Practice 10 minutes or more each day. The more you do it, the better you get. It might take time — but every small step makes a big difference later.</p>
+  </div>
+
+  <div class="content hidden" id="part2">
+    <h1>Part 2: Real Examples + Coding = Cash</h1>
+
+    <h2>Example 1: Sell Old Stuff</h2>
+    <p>Look around your house. Find 3 things you don’t use anymore — shoes, toys, books, or clothes. Make sure they’re clean. Take a good photo with a phone. Post it online (like Facebook Marketplace, with an adult). Set a fair price and be polite when people ask about it. You can earn your first $20 fast!</p>
+
+    <h2>Example 2: Do Jobs Online</h2>
+    <p>Go to Fiverr.com (with adult help). Make a profile. Think of something easy you can offer — like drawing pictures, writing poems, or making posters. Add some samples using Canva. Share your profile with friends and online groups.</p>
+
+    <h2>Example 3: Learn Coding and Build a Website</h2>
+    <ul>
+      <li>Go to <strong>W3Schools.com</strong> and start learning HTML and CSS. It’s easy and made for beginners.</li>
+      <li>Use <strong>Replit.com</strong> to write and test your code. You don’t need to download anything.</li>
+      <li>Try making a simple homepage. Put your name, your favorite color, and a few fun facts about you.</li>
+      <li>Next, try making a website for something you like — a game, a shop, or a blog.</li>
+      <li>Once your site looks good, show it to friends, family, or local businesses. You could offer to build websites for them for money!</li>
+      <li>Later, you can add <strong>ads</strong> to your site and get paid when people visit it.</li>
+    </ul>
+
+    <h2>Extra Tips</h2>
+    <ul>
+      <li>Be nice to people. Say thank you and be helpful — they will trust you more.</li>
+      <li>Take breaks when needed. Rest helps your brain stay sharp.</li>
+      <li>Keep a notebook of ideas. If something doesn't work, write why and try something new.</li>
+      <li>Share your wins! Tell your friends what you made. Show your website or pictures of your sales.</li>
+    </ul>
+
+    <p>You are now on the path to becoming a young entrepreneur. Believe in yourself and keep learning. Making money is fun — and the more you learn, the more you can earn!</p>
+  </div>
+
+  <script>
+    function showPart(part) {
+      document.getElementById('part1').classList.add('hidden');
+      document.getElementById('part2').classList.add('hidden');
+      document.getElementById('part' + part).classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>
